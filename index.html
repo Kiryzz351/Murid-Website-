@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiryzz Store - Murid Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h2 class="loading-text">KIRYZZ STORE</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-subtitle">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Snow Overlay -->
+    <div class="snow-container">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="https://files.catbox.moe/7qudw3.jpg" alt="Kiryzz Store Logo" class="logo-img">
+                    <h1>KIRYZZ STORE</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#packages" class="nav-link">Paket</a>
+                    <a href="#payment" class="nav-link">Pembayaran</a>
+                    <a href="#contact" class="nav-link">Kontak</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">MURID WEBSITE PRIVATE</h1>
+                    <p class="hero-subtitle">Belajar membuat website dengan bimbingan personal hingga mahir!</p>
+                    <button class="cta-button" onclick="scrollToPackages()">
+                        <i class="fas fa-rocket"></i> Mulai Belajar Sekarang
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="packages">
+            <div class="container">
+                <h2 class="section-title">PAKET PEMBELAJARAN</h2>
+                <div class="packages-grid">
+                    <!-- Simple Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Murid Website Simple</h3>
+                            <div class="price">5K</div>
+                        </div>
+                        <div class="package-content">
+                            <h4>Keuntungan:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Di Ajarin Sampai Bisa</li>
+                                <li><i class="fas fa-check"></i> Di Ajarin 3 file (Index, Style, JavaScript)</li>
+                                <li><i class="fas fa-check"></i> Cara Rename</li>
+                                <li><i class="fas fa-check"></i> Cara Deploy</li>
+                                <li><i class="fas fa-check"></i> Tutorial Ada Di Grup Sampai 1-5</li>
+                            </ul>
+                            <button class="order-btn" onclick="selectPackage('simple', 5000)">
+                                <i class="fas fa-shopping-cart"></i> Pilih Paket
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Medium Package -->
+                    <div class="package-card featured">
+                        <div class="package-header">
+                            <div class="badge">POPULER</div>
+                            <h3>Murid Website Medium</h3>
+                            <div class="price">7K</div>
+                        </div>
+                        <div class="package-content">
+                            <h4>Keuntungan:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Di Ajarin Sampai Bisa</li>
+                                <li><i class="fas fa-check"></i> Di Ajarin 3 file (Index, Style, JavaScript)</li>
+                                <li><i class="fas fa-check"></i> Cara Rename</li>
+                                <li><i class="fas fa-check"></i> Cara Deploy</li>
+                                <li><i class="fas fa-check"></i> Tutorial Ada Di Grup Sampai 1-9</li>
+                            </ul>
+                            <button class="order-btn" onclick="selectPackage('medium', 7000)">
+                                <i class="fas fa-shopping-cart"></i> Pilih Paket
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Hard Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Murid Website Hard</h3>
+                            <div class="price">10K</div>
+                        </div>
+                        <div class="package-content">
+                            <h4>Keuntungan:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Di Ajarin Sampai Bisa</li>
+                                <li><i class="fas fa-check"></i> Di Ajarin 3 file (Index, Style, JavaScript)</li>
+                                <li><i class="fas fa-check"></i> Cara Rename</li>
+                                <li><i class="fas fa-check"></i> Cara Deploy</li>
+                                <li><i class="fas fa-check"></i> Tutorial Ada Di Grup Sampai 1-12</li>
+                            </ul>
+                            <button class="order-btn" onclick="selectPackage('hard', 10000)">
+                                <i class="fas fa-shopping-cart"></i> Pilih Paket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Section -->
+        <section id="payment" class="payment">
+            <div class="container">
+                <h2 class="section-title">METODE PEMBAYARAN</h2>
+                <div class="payment-methods">
+                    <div class="method-card" onclick="selectPayment('dana')">
+                        <i class="fas fa-wallet"></i>
+                        <h3>DANA</h3>
+                        <p>0882015857798</p>
+                    </div>
+                    <div class="method-card" onclick="selectPayment('ovo')">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>OVO</h3>
+                        <p>083190336544</p>
+                    </div>
+                    <div class="method-card" onclick="selectPayment('gopay')">
+                        <i class="fas fa-motorcycle"></i>
+                        <h3>GOPAY</h3>
+                        <p>083190336544</p>
+                    </div>
+                    <div class="method-card" onclick="selectPayment('qris')">
+                        <i class="fas fa-qrcode"></i>
+                        <h3>QRIS</h3>
+                        <p>Scan QR Code</p>
+                    </div>
+                </div>
+
+                <!-- QRIS Section -->
+                <div id="qris-section" class="qris-section" style="display: none;">
+                    <h3>Scan QR Code untuk Pembayaran</h3>
+                    <img src="https://files.catbox.moe/a3f5v7.jpeg" alt="QRIS Code" class="qris-img">
+                </div>
+
+                <!-- Upload Proof Section -->
+                <div class="upload-section">
+                    <h3>Upload Bukti Transfer</h3>
+                    <div class="upload-area" onclick="document.getElementById('proof-upload').click()">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Klik untuk upload bukti transfer</p>
+                        <input type="file" id="proof-upload" accept="image/*" style="display: none;" onchange="previewImage(this)">
+                    </div>
+                    <div id="image-preview" class="image-preview"></div>
+                </div>
+
+                <!-- Order Summary -->
+                <div id="order-summary" class="order-summary" style="display: none;">
+                    <h3>Ringkasan Pesanan</h3>
+                    <div class="summary-content">
+                        <p><strong>Paket:</strong> <span id="selected-package"></span></p>
+                        <p><strong>Harga:</strong> Rp <span id="selected-price"></span></p>
+                        <p><strong>Metode Pembayaran:</strong> <span id="selected-payment"></span></p>
+                    </div>
+                    <button class="checkout-btn" onclick="processOrder()">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesanan ke Telegram
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">HUBUNGI KAMI</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-telegram"></i>
+                        <h3>Telegram</h3>
+                        <p>@kiryzz_store</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <p>6283170618607</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>kelpinmedank01@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Kiryzz Store. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Music Control -->
+    <div class="music-control">
+        <button id="music-toggle" class="music-btn" onclick="toggleMusic()">
+            <i class="fas fa-music"></i>
+        </button>
+        <audio id="background-music" loop>
+            <source src="https://files.catbox.moe/lq34ex.mp3" type="audio/wav">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
